@@ -15,13 +15,13 @@ export default function Card(props) {
     .then( (response)=>setData(response.data))
     .catch((error)=>setURlerror(error.message))
 
-  }, [props.categorie])
+  }, [API])
   const {setsingle} = useContext(MyContext);
   const navigate = useNavigate();
   const navi = (value)=>{
     setsingle(value);
     navigate('/Mcard')
-
+    // console.log(value);
   }
   
 

@@ -5,7 +5,7 @@ import {MyContext} from './context/Context'
 
 export default function MCard() {
     const {single} = useContext(MyContext);
-    console.log(single);
+    // console.log(single.id);
   return (
     <>
     <div class="max-w-full mx-auto md:py-20 md:px-40 bg-[#ffffff] rounded-md overflow-hidden shadow-md">
